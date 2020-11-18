@@ -1,0 +1,21 @@
+.filterContainer {
+  height: 35px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #ced4da;
+  color: #567484;
+  background-color: rgba(255, 255, 255, 0.1);
+  label {
+    width: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.switcher{
+  width: 30px;
+  padding: 0;
+  font-size: 20px;
+}

@@ -1,0 +1,7 @@
+.App {
+  max-width: 500px;
+  min-width: 300px;
+  margin: 10px auto;
+  box-shadow: #7d8686 0 0 5px;
+  background: linear-gradient( 270deg, rgb(216, 247, 250), #b5d2fa);
+}

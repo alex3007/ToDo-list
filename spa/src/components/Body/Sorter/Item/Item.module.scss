@@ -1,0 +1,78 @@
+form {
+  position: relative;
+
+  textArea {
+    height: 55px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 78px 8px 45px;
+    display: block;
+    border-radius: 0;
+    overflow: auto;
+    border-width: 0 0 1px 0;
+    border-color: #ced4da;
+    font-size: 17px;
+    font-family: Arial;
+    color: #5387a5;
+    background-color: transparent;
+    resize: none;
+    transition: background-color 0.5s;
+
+    &:enabled {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.bgWhite {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: background-color 0.5s;
+  &:enabled {
+    background-color: #ffffff;
+  }
+}
+
+.markingIcon, .dropIcon, .editIcon {
+  width: 20px;
+  min-height: 28px;
+  padding: 8px;
+  position: absolute;
+  top: 5px;
+  color: #567484;
+  border: rgba(176, 179, 180, 0.22) solid;
+  transition: all 0.3s;
+  font-size: 12px;
+
+  &:hover {
+    color: #6f9dc6;
+  }
+}
+
+.markingIcon {
+  left: 0;
+  border-width: 0 1px 0 0;
+
+}
+
+.dropIcon {
+  right: 10px;
+  border-width: 0;
+  padding: 8px 0;
+
+}
+
+.editIcon {
+  width: 20px;
+  right: 40px;
+  padding: 8px;
+  border-width: 0 1px 0 1px;
+}
+
+@media (max-width: 400px) {
+  textArea {
+    min-height: 75px;
+  }
+  .markingIcon, .dropIcon, .editIcon {
+    height: 45px;
+  }
+}
