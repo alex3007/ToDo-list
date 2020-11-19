@@ -12,6 +12,7 @@ const Header = (props) => {
                         <img src={preloader}/>
                     </CSSTransition> : null}
             </TransitionGroup>
+            {props.isError?<p>Something<br/>is wrong...</p>:null}
             <h1>ToDo list</h1>
         </div>
     )
